@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65C846A516C1AB2B00C74F2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846A416C1AB2B00C74F2E /* UIKit.framework */; };
+		65C846A716C1AB2B00C74F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846A616C1AB2B00C74F2E /* Foundation.framework */; };
+		65C846A916C1AB2B00C74F2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846A816C1AB2B00C74F2E /* CoreGraphics.framework */; };
+		65C846AF16C1AB2B00C74F2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C846AD16C1AB2B00C74F2E /* InfoPlist.strings */; };
+		65C846B116C1AB2B00C74F2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846B016C1AB2B00C74F2E /* main.m */; };
+		65C846B516C1AB2B00C74F2E /* DNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846B416C1AB2B00C74F2E /* DNTAppDelegate.m */; };
+		65C846B716C1AB2B00C74F2E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C846B616C1AB2B00C74F2E /* Default.png */; };
+		65C846B916C1AB2B00C74F2E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C846B816C1AB2B00C74F2E /* Default@2x.png */; };
+		65C846BB16C1AB2B00C74F2E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C846BA16C1AB2B00C74F2E /* Default-568h@2x.png */; };
+		65C846C316C1AB2B00C74F2E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846C216C1AB2B00C74F2E /* SenTestingKit.framework */; };
+		65C846C416C1AB2B00C74F2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846A416C1AB2B00C74F2E /* UIKit.framework */; };
+		65C846C516C1AB2B00C74F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846A616C1AB2B00C74F2E /* Foundation.framework */; };
+		65C846CD16C1AB2B00C74F2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C846CB16C1AB2B00C74F2E /* InfoPlist.strings */; };
+		65C846D016C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846CF16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65C846C616C1AB2B00C74F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65C8469916C1AB2A00C74F2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65C846A016C1AB2B00C74F2E;
+			remoteInfo = "Sun Spot Analyser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65C846A116C1AB2B00C74F2E /* Sun Spot Analyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sun Spot Analyser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C846A416C1AB2B00C74F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65C846A616C1AB2B00C74F2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65C846A816C1AB2B00C74F2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65C846AC16C1AB2B00C74F2E /* Sun Spot Analyser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sun Spot Analyser-Info.plist"; sourceTree = "<group>"; };
+		65C846AE16C1AB2B00C74F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65C846B016C1AB2B00C74F2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65C846B216C1AB2B00C74F2E /* Sun Spot Analyser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sun Spot Analyser-Prefix.pch"; sourceTree = "<group>"; };
+		65C846B316C1AB2B00C74F2E /* DNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTAppDelegate.h; sourceTree = "<group>"; };
+		65C846B416C1AB2B00C74F2E /* DNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTAppDelegate.m; sourceTree = "<group>"; };
+		65C846B616C1AB2B00C74F2E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		65C846B816C1AB2B00C74F2E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		65C846BA16C1AB2B00C74F2E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		65C846C116C1AB2B00C74F2E /* Sun Spot AnalyserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sun Spot AnalyserTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C846C216C1AB2B00C74F2E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		65C846CA16C1AB2B00C74F2E /* Sun Spot AnalyserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sun Spot AnalyserTests-Info.plist"; sourceTree = "<group>"; };
+		65C846CC16C1AB2B00C74F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65C846CE16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sun_Spot_AnalyserTests.h; sourceTree = "<group>"; };
+		65C846CF16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sun_Spot_AnalyserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65C8469E16C1AB2B00C74F2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C846A516C1AB2B00C74F2E /* UIKit.framework in Frameworks */,
+				65C846A716C1AB2B00C74F2E /* Foundation.framework in Frameworks */,
+				65C846A916C1AB2B00C74F2E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C846BD16C1AB2B00C74F2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C846C316C1AB2B00C74F2E /* SenTestingKit.framework in Frameworks */,
+				65C846C416C1AB2B00C74F2E /* UIKit.framework in Frameworks */,
+				65C846C516C1AB2B00C74F2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65C8469816C1AB2A00C74F2E = {
+			isa = PBXGroup;
+			children = (
+				65C846AA16C1AB2B00C74F2E /* Sun Spot Analyser */,
+				65C846C816C1AB2B00C74F2E /* Sun Spot AnalyserTests */,
+				65C846A316C1AB2B00C74F2E /* Frameworks */,
+				65C846A216C1AB2B00C74F2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65C846A216C1AB2B00C74F2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65C846A116C1AB2B00C74F2E /* Sun Spot Analyser.app */,
+				65C846C116C1AB2B00C74F2E /* Sun Spot AnalyserTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65C846A316C1AB2B00C74F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65C846A416C1AB2B00C74F2E /* UIKit.framework */,
+				65C846A616C1AB2B00C74F2E /* Foundation.framework */,
+				65C846A816C1AB2B00C74F2E /* CoreGraphics.framework */,
+				65C846C216C1AB2B00C74F2E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65C846AA16C1AB2B00C74F2E /* Sun Spot Analyser */ = {
+			isa = PBXGroup;
+			children = (
+				65C846B316C1AB2B00C74F2E /* DNTAppDelegate.h */,
+				65C846B416C1AB2B00C74F2E /* DNTAppDelegate.m */,
+				65C846AB16C1AB2B00C74F2E /* Supporting Files */,
+			);
+			path = "Sun Spot Analyser";
+			sourceTree = "<group>";
+		};
+		65C846AB16C1AB2B00C74F2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65C846AC16C1AB2B00C74F2E /* Sun Spot Analyser-Info.plist */,
+				65C846AD16C1AB2B00C74F2E /* InfoPlist.strings */,
+				65C846B016C1AB2B00C74F2E /* main.m */,
+				65C846B216C1AB2B00C74F2E /* Sun Spot Analyser-Prefix.pch */,
+				65C846B616C1AB2B00C74F2E /* Default.png */,
+				65C846B816C1AB2B00C74F2E /* Default@2x.png */,
+				65C846BA16C1AB2B00C74F2E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65C846C816C1AB2B00C74F2E /* Sun Spot AnalyserTests */ = {
+			isa = PBXGroup;
+			children = (
+				65C846CE16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.h */,
+				65C846CF16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m */,
+				65C846C916C1AB2B00C74F2E /* Supporting Files */,
+			);
+			path = "Sun Spot AnalyserTests";
+			sourceTree = "<group>";
+		};
+		65C846C916C1AB2B00C74F2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65C846CA16C1AB2B00C74F2E /* Sun Spot AnalyserTests-Info.plist */,
+				65C846CB16C1AB2B00C74F2E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65C846A016C1AB2B00C74F2E /* Sun Spot Analyser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C846D316C1AB2B00C74F2E /* Build configuration list for PBXNativeTarget "Sun Spot Analyser" */;
+			buildPhases = (
+				65C8469D16C1AB2B00C74F2E /* Sources */,
+				65C8469E16C1AB2B00C74F2E /* Frameworks */,
+				65C8469F16C1AB2B00C74F2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sun Spot Analyser";
+			productName = "Sun Spot Analyser";
+			productReference = 65C846A116C1AB2B00C74F2E /* Sun Spot Analyser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65C846C016C1AB2B00C74F2E /* Sun Spot AnalyserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C846D616C1AB2B00C74F2E /* Build configuration list for PBXNativeTarget "Sun Spot AnalyserTests" */;
+			buildPhases = (
+				65C846BC16C1AB2B00C74F2E /* Sources */,
+				65C846BD16C1AB2B00C74F2E /* Frameworks */,
+				65C846BE16C1AB2B00C74F2E /* Resources */,
+				65C846BF16C1AB2B00C74F2E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65C846C716C1AB2B00C74F2E /* PBXTargetDependency */,
+			);
+			name = "Sun Spot AnalyserTests";
+			productName = "Sun Spot AnalyserTests";
+			productReference = 65C846C116C1AB2B00C74F2E /* Sun Spot AnalyserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65C8469916C1AB2A00C74F2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DNT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Daniel Thorpe";
+			};
+			buildConfigurationList = 65C8469C16C1AB2A00C74F2E /* Build configuration list for PBXProject "Sun Spot Analyser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65C8469816C1AB2A00C74F2E;
+			productRefGroup = 65C846A216C1AB2B00C74F2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65C846A016C1AB2B00C74F2E /* Sun Spot Analyser */,
+				65C846C016C1AB2B00C74F2E /* Sun Spot AnalyserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65C8469F16C1AB2B00C74F2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C846AF16C1AB2B00C74F2E /* InfoPlist.strings in Resources */,
+				65C846B716C1AB2B00C74F2E /* Default.png in Resources */,
+				65C846B916C1AB2B00C74F2E /* Default@2x.png in Resources */,
+				65C846BB16C1AB2B00C74F2E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C846BE16C1AB2B00C74F2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C846CD16C1AB2B00C74F2E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65C846BF16C1AB2B00C74F2E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65C8469D16C1AB2B00C74F2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C846B116C1AB2B00C74F2E /* main.m in Sources */,
+				65C846B516C1AB2B00C74F2E /* DNTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C846BC16C1AB2B00C74F2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C846D016C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65C846C716C1AB2B00C74F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65C846A016C1AB2B00C74F2E /* Sun Spot Analyser */;
+			targetProxy = 65C846C616C1AB2B00C74F2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65C846AD16C1AB2B00C74F2E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65C846AE16C1AB2B00C74F2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65C846CB16C1AB2B00C74F2E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65C846CC16C1AB2B00C74F2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65C846D116C1AB2B00C74F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65C846D216C1AB2B00C74F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65C846D416C1AB2B00C74F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sun Spot Analyser/Sun Spot Analyser-Prefix.pch";
+				INFOPLIST_FILE = "Sun Spot Analyser/Sun Spot Analyser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65C846D516C1AB2B00C74F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sun Spot Analyser/Sun Spot Analyser-Prefix.pch";
+				INFOPLIST_FILE = "Sun Spot Analyser/Sun Spot Analyser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		65C846D716C1AB2B00C74F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sun Spot Analyser.app/Sun Spot Analyser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sun Spot Analyser/Sun Spot Analyser-Prefix.pch";
+				INFOPLIST_FILE = "Sun Spot AnalyserTests/Sun Spot AnalyserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		65C846D816C1AB2B00C74F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sun Spot Analyser.app/Sun Spot Analyser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sun Spot Analyser/Sun Spot Analyser-Prefix.pch";
+				INFOPLIST_FILE = "Sun Spot AnalyserTests/Sun Spot AnalyserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65C8469C16C1AB2A00C74F2E /* Build configuration list for PBXProject "Sun Spot Analyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C846D116C1AB2B00C74F2E /* Debug */,
+				65C846D216C1AB2B00C74F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65C846D316C1AB2B00C74F2E /* Build configuration list for PBXNativeTarget "Sun Spot Analyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C846D416C1AB2B00C74F2E /* Debug */,
+				65C846D516C1AB2B00C74F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65C846D616C1AB2B00C74F2E /* Build configuration list for PBXNativeTarget "Sun Spot AnalyserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C846D716C1AB2B00C74F2E /* Debug */,
+				65C846D816C1AB2B00C74F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65C8469916C1AB2A00C74F2E /* Project object */;
+}
