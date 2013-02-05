@@ -22,6 +22,7 @@
 		65C846CD16C1AB2B00C74F2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C846CB16C1AB2B00C74F2E /* InfoPlist.strings */; };
 		65C846DB16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846DA16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m */; };
 		65C846DE16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846DD16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m */; };
+		65C846E116C1AD0F00C74F2E /* DNTSunSpotAnalyserFirstTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846E016C1AD0F00C74F2E /* DNTSunSpotAnalyserFirstTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		65C846D916C1AB6D00C74F2E /* DNTSunSpotAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTSunSpotAnalyser.h; path = Classes/Models/DNTSunSpotAnalyser.h; sourceTree = SOURCE_ROOT; };
 		65C846DA16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTSunSpotAnalyser.m; path = Classes/Models/DNTSunSpotAnalyser.m; sourceTree = SOURCE_ROOT; };
 		65C846DD16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTSunSpotAnalyserTests.m; sourceTree = "<group>"; };
+		65C846E016C1AD0F00C74F2E /* DNTSunSpotAnalyserFirstTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTSunSpotAnalyserFirstTest.m; sourceTree = "<group>"; };
+		65C846E216C1AD3300C74F2E /* DNTSunSpotAnalyserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTSunSpotAnalyserTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +143,10 @@
 		65C846C816C1AB2B00C74F2E /* Sun Spot AnalyserTests */ = {
 			isa = PBXGroup;
 			children = (
-				65C846C916C1AB2B00C74F2E /* Supporting Files */,
+				65C846E216C1AD3300C74F2E /* DNTSunSpotAnalyserTests.h */,
 				65C846DD16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m */,
+				65C846C916C1AB2B00C74F2E /* Supporting Files */,
+				65C846E016C1AD0F00C74F2E /* DNTSunSpotAnalyserFirstTest.m */,
 			);
 			path = "Sun Spot AnalyserTests";
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C846DE16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m in Sources */,
+				65C846E116C1AD0F00C74F2E /* DNTSunSpotAnalyserFirstTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

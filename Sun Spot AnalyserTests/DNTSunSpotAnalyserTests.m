@@ -6,16 +6,7 @@
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
-
-@class DNTSunSpotAnalyser;
-
-@interface DNTSunSpotAnalyserTests : SenTestCase
-
-@property (nonatomic) DNTSunSpotAnalyser *analyser;
-
-@end
-
+#import "DNTSunSpotAnalyserTests.h"
 
 @implementation DNTSunSpotAnalyserTests
 
