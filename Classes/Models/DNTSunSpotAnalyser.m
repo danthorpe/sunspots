@@ -78,8 +78,6 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
         }
     }
 
-    NSLog(@"sun spots: %@", self.sunSpots);
-
     // Sort the sun spots
     NSArray *sorted = [self.sunSpots sortedArrayUsingComparator:^NSComparisonResult(DNTSunSpot *spot1, DNTSunSpot *spot2) {
         if ( spot1.score == spot2.score ) {
@@ -90,8 +88,6 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
         return NSOrderedDescending;
     }];
 
-    NSLog(@"sorted: %@", sorted);
-
     return [sorted subarrayWithRange:NSMakeRange(0, length)];
 }
 
@@ -100,7 +96,7 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
     if ( self.expectedLengthOfAnswer == 1 ) {
         return [answer[0] description];
     }
-    return [answer description];
+    return answer;
 }
 
 #pragma mark - Private

@@ -7,18 +7,8 @@
 //
 
 #import "DNTSunSpotAnalyserTests.h"
+#import "DNTSunSpotAnalyser.h"
 
 @implementation DNTSunSpotAnalyserTests
-
-- (void)setUp {
-    [super setUp];
-
-}
-
-- (void)tearDown {
-
-
-    [super tearDown];
-}
 
 @end

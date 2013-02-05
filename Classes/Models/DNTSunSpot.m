@@ -35,7 +35,7 @@
         p.x += 1;
     }
 
-    return !CGPointEqualToPoint(self.coordinate, p) ? p : CGPointZero;
+    return p;
 }
 
 - (NSSet *)neighbourhoodCoordinates {
@@ -58,7 +58,8 @@
     for ( NSNumber *position in possibles ) {
 
         p = [self coordinateAtRelativePosition:[position integerValue]];
-        if ( !CGPointEqualToPoint(CGPointZero, p)) {
+//        NSLog(@"coord: %@, postion: %@, p: %@", NSStringFromCGPoint(self.coordinate), position, NSStringFromCGPoint(p));
+        if ( !CGPointEqualToPoint(self.coordinate, p)) {
             [neighbourhood addObject:[NSValue valueWithCGPoint:p]];
         }
     }

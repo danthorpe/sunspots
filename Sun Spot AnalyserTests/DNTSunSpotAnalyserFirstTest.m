@@ -39,8 +39,6 @@
     STAssertEqualObjects(self.analyser.data, [self.input subarrayWithRange:NSMakeRange(2, 25)], @"The analyser's data should equal the last 25 items in the input.");
 }
 
-
-
 - (void)testAnalyserAnswer {
     STAssertTrue([self.analyser respondsToSelector:@selector(spotsAnalysedByOrder:length:)], @"The analyser doesn't implement the method required to compute the answer");
     STAssertTrue([self.analyser respondsToSelector:@selector(analyse)], @"The analyser doesn't implement a convenience method to calculate the answer");
