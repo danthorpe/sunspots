@@ -48,4 +48,12 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
     return self;
 }
 
+- (NSArray *)spotsAnalysedByOrder:(NSComparisonResult)order length:(NSUInteger)length {
+    return nil;
+}
+
+- (id)analyse {
+    return [[self spotsAnalysedByOrder:NSOrderedDescending length:self.expectedLengthOfAnswer] description];
+}
+
 @end

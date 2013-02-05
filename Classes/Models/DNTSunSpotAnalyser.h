@@ -28,11 +28,17 @@ typedef struct {
  */
 - (id)initWithSize:(DNTSunSpotAnalyserSize)size data:(NSArray *)data;
 
+- (id)initWithInputData:(NSArray *)input;
+
 /**
  * @abstract
- * Less elegant convenience constructor
+ * Analyser the spots using the given order, and return
+ * a sub array of the given length.
  */
-- (id)initWithInputData:(NSArray *)input;
+- (NSArray *)spotsAnalysedByOrder:(NSComparisonResult)order length:(NSUInteger)length;
+
+- (id)analyse;
+
 
 @end
 
