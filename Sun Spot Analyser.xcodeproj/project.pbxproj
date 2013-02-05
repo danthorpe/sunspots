@@ -20,7 +20,8 @@
 		65C846C416C1AB2B00C74F2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846A416C1AB2B00C74F2E /* UIKit.framework */; };
 		65C846C516C1AB2B00C74F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C846A616C1AB2B00C74F2E /* Foundation.framework */; };
 		65C846CD16C1AB2B00C74F2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C846CB16C1AB2B00C74F2E /* InfoPlist.strings */; };
-		65C846D016C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846CF16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m */; };
+		65C846DB16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846DA16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m */; };
+		65C846DE16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846DD16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		65C846C216C1AB2B00C74F2E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		65C846CA16C1AB2B00C74F2E /* Sun Spot AnalyserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sun Spot AnalyserTests-Info.plist"; sourceTree = "<group>"; };
 		65C846CC16C1AB2B00C74F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		65C846CE16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sun_Spot_AnalyserTests.h; sourceTree = "<group>"; };
-		65C846CF16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sun_Spot_AnalyserTests.m; sourceTree = "<group>"; };
+		65C846D916C1AB6D00C74F2E /* DNTSunSpotAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTSunSpotAnalyser.h; path = Classes/Models/DNTSunSpotAnalyser.h; sourceTree = SOURCE_ROOT; };
+		65C846DA16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTSunSpotAnalyser.m; path = Classes/Models/DNTSunSpotAnalyser.m; sourceTree = SOURCE_ROOT; };
+		65C846DD16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTSunSpotAnalyserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,8 @@
 				65C846B316C1AB2B00C74F2E /* DNTAppDelegate.h */,
 				65C846B416C1AB2B00C74F2E /* DNTAppDelegate.m */,
 				65C846AB16C1AB2B00C74F2E /* Supporting Files */,
+				65C846D916C1AB6D00C74F2E /* DNTSunSpotAnalyser.h */,
+				65C846DA16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m */,
 			);
 			path = "Sun Spot Analyser";
 			sourceTree = "<group>";
@@ -136,9 +140,8 @@
 		65C846C816C1AB2B00C74F2E /* Sun Spot AnalyserTests */ = {
 			isa = PBXGroup;
 			children = (
-				65C846CE16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.h */,
-				65C846CF16C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m */,
 				65C846C916C1AB2B00C74F2E /* Supporting Files */,
+				65C846DD16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m */,
 			);
 			path = "Sun Spot AnalyserTests";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				65C846B116C1AB2B00C74F2E /* main.m in Sources */,
 				65C846B516C1AB2B00C74F2E /* DNTAppDelegate.m in Sources */,
+				65C846DB16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C846D016C1AB2B00C74F2E /* Sun_Spot_AnalyserTests.m in Sources */,
+				65C846DE16C1AB8600C74F2E /* DNTSunSpotAnalyserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
