@@ -31,4 +31,6 @@ typedef NS_OPTIONS(NSUInteger, DNTSunSpotRelativePositions) {
 
 - (NSArray *)neighbourhoodCoordinates;
 
+- (UIColor *)representativeColor;
+
 @end

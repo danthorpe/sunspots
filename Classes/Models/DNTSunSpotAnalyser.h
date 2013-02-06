@@ -17,6 +17,8 @@ typedef struct {
 
 @property (nonatomic, readonly) DNTSunSpotAnalyserSize size;
 @property (nonatomic, readonly) NSArray *data;
+@property (nonatomic, readonly) NSArray *spots;
+@property (nonatomic, readonly) NSRange rangeOfScores;
 
 /**
  * @abstract
@@ -43,3 +45,7 @@ typedef struct {
 @end
 
 extern DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUInteger height);
+
+/// Convenience functions to get the test data
+extern NSArray *TestDataOne();
+extern NSArray *TestDataTwo();

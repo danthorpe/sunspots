@@ -19,7 +19,8 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
 
 @property (nonatomic, readwrite) DNTSunSpotAnalyserSize size;
 @property (nonatomic, readwrite) NSArray *data;
-@property (nonatomic) NSMutableArray *sunSpots;
+@property (nonatomic, readwrite) NSArray *spots;
+@property (nonatomic, readwrite) NSRange rangeOfScores;
 @property (nonatomic) NSUInteger expectedLengthOfAnswer;
 
 @end
@@ -33,6 +34,7 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
     if (self) {
         self.size = size;
         self.data = data;
+        [self createSunSpots];
     }
     return self;
 }
@@ -53,7 +55,7 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
 - (NSArray *)spotsAnalysedByOrder:(NSComparisonResult)order length:(NSUInteger)length {
 
     // Make sure we have some sun spot objects
-    if ( !self.sunSpots ) {
+    if ( !self.spots ) {
         [self createSunSpots];
     }
 
@@ -65,7 +67,7 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
     NSInteger i;
 
     // Iterate through them and calculate their scores
-    for ( DNTSunSpot *sunSpot in self.sunSpots ) {
+    for ( DNTSunSpot *sunSpot in self.spots ) {
 
         // Calculate the score for the neighbood
         sunSpot.score = [sunSpot.intensity integerValue];
@@ -74,12 +76,12 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
 
         for ( NSValue *pointValue in neighbourhood ) {
             i = indexOfCoordinate( [pointValue CGPointValue] );
-            sunSpot.score += [[self.sunSpots[i] intensity] integerValue];
+            sunSpot.score += [[self.spots[i] intensity] integerValue];
         }
     }
 
     // Sort the sun spots
-    NSArray *sorted = [self.sunSpots sortedArrayUsingComparator:^NSComparisonResult(DNTSunSpot *spot1, DNTSunSpot *spot2) {
+    NSArray *sorted = [self.spots sortedArrayUsingComparator:^NSComparisonResult(DNTSunSpot *spot1, DNTSunSpot *spot2) {
         if ( spot1.score == spot2.score ) {
             return NSOrderedSame;
         } else if ( spot1.score > spot2.score ) {
@@ -87,6 +89,10 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
         }
         return NSOrderedDescending;
     }];
+
+    NSUInteger minimum = [[sorted lastObject] score];
+    NSUInteger maximum = [sorted[0] score];
+    self.rangeOfScores = NSMakeRange(minimum, maximum - minimum);
 
     return [sorted subarrayWithRange:NSMakeRange(0, length)];
 }
@@ -102,7 +108,7 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
 #pragma mark - Private
 
 - (void)createSunSpots {
-    self.sunSpots = [NSMutableArray arrayWithCapacity:self.data.count];
+    NSMutableArray *spots = [NSMutableArray arrayWithCapacity:self.data.count];
 
     NSUInteger i, x, y;
     DNTSunSpot *sunSpot = nil;
@@ -110,8 +116,28 @@ inline DNTSunSpotAnalyserSize DNTSunSpotAnalyserSizeMake(NSUInteger width, NSUIn
         x = i % self.size.width;
         y = i / self.size.width;
         sunSpot = [[DNTSunSpot alloc] initWithCoordinate:CGPointMake((CGFloat)x, (CGFloat)y) inSize:self.size intensity:self.data[i]];
-        [self.sunSpots addObject:sunSpot];
+        [spots addObject:sunSpot];
     }
+
+    self.spots = spots;
 }
 
 @end
+
+/// Convenience functions to get the test data
+NSArray *TestDataOne() {
+    return @[ @(1), @(5),
+              @(5), @(3), @(1), @(2), @(0),
+              @(4), @(1), @(1), @(3), @(2),
+              @(2), @(3), @(2), @(4), @(3),
+              @(0), @(2), @(3), @(3), @(2),
+              @(1), @(0), @(2), @(4), @(3) ];
+}
+
+NSArray *TestDataTwo() {
+    return @[ @(3), @(4),
+              @(2), @(3), @(2), @(1),
+              @(4), @(4), @(2), @(0),
+              @(3), @(4), @(1), @(1),
+              @(2), @(3), @(4), @(4) ];
+}

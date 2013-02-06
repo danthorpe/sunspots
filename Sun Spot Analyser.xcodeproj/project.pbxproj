@@ -25,6 +25,7 @@
 		65C846E116C1AD0F00C74F2E /* DNTSunSpotAnalyserFirstTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846E016C1AD0F00C74F2E /* DNTSunSpotAnalyserFirstTest.m */; };
 		65C846E516C1B4CA00C74F2E /* DNTSunSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846E416C1B4CA00C74F2E /* DNTSunSpot.m */; };
 		65C846E916C1CBA900C74F2E /* DNTSunSpotAnalyserSecondTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846E816C1CBA900C74F2E /* DNTSunSpotAnalyserSecondTest.m */; };
+		65C846ED16C1CEDC00C74F2E /* DNTSunSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C846EB16C1CEDC00C74F2E /* DNTSunSpotViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		65C846E316C1B4CA00C74F2E /* DNTSunSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTSunSpot.h; path = Classes/Models/DNTSunSpot.h; sourceTree = SOURCE_ROOT; };
 		65C846E416C1B4CA00C74F2E /* DNTSunSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTSunSpot.m; path = Classes/Models/DNTSunSpot.m; sourceTree = SOURCE_ROOT; };
 		65C846E816C1CBA900C74F2E /* DNTSunSpotAnalyserSecondTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTSunSpotAnalyserSecondTest.m; sourceTree = "<group>"; };
+		65C846EA16C1CEDC00C74F2E /* DNTSunSpotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTSunSpotViewController.h; path = Classes/Controllers/DNTSunSpotViewController.h; sourceTree = SOURCE_ROOT; };
+		65C846EB16C1CEDC00C74F2E /* DNTSunSpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTSunSpotViewController.m; path = Classes/Controllers/DNTSunSpotViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +128,9 @@
 				65C846B316C1AB2B00C74F2E /* DNTAppDelegate.h */,
 				65C846B416C1AB2B00C74F2E /* DNTAppDelegate.m */,
 				65C846AB16C1AB2B00C74F2E /* Supporting Files */,
-				65C846D916C1AB6D00C74F2E /* DNTSunSpotAnalyser.h */,
-				65C846DA16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m */,
-				65C846E316C1B4CA00C74F2E /* DNTSunSpot.h */,
-				65C846E416C1B4CA00C74F2E /* DNTSunSpot.m */,
+				65C846EF16C1CEE500C74F2E /* Models */,
+				65C846EA16C1CEDC00C74F2E /* DNTSunSpotViewController.h */,
+				65C846EB16C1CEDC00C74F2E /* DNTSunSpotViewController.m */,
 			);
 			path = "Sun Spot Analyser";
 			sourceTree = "<group>";
@@ -166,6 +168,17 @@
 				65C846CB16C1AB2B00C74F2E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65C846EF16C1CEE500C74F2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65C846D916C1AB6D00C74F2E /* DNTSunSpotAnalyser.h */,
+				65C846DA16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m */,
+				65C846E316C1B4CA00C74F2E /* DNTSunSpot.h */,
+				65C846E416C1B4CA00C74F2E /* DNTSunSpot.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +295,7 @@
 				65C846B516C1AB2B00C74F2E /* DNTAppDelegate.m in Sources */,
 				65C846DB16C1AB6D00C74F2E /* DNTSunSpotAnalyser.m in Sources */,
 				65C846E516C1B4CA00C74F2E /* DNTSunSpot.m in Sources */,
+				65C846ED16C1CEDC00C74F2E /* DNTSunSpotViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@
         self.coordinate = coordinate;
         self.size = size;
         self.intensity = intensity;
+        self.score = [intensity integerValue];
     }
     return self;
 }
@@ -69,6 +70,19 @@
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"(%d,%d score:%d)", (NSUInteger)self.coordinate.x, (NSUInteger)self.coordinate.y, self.score];
+}
+
+- (UIColor *)representativeColor {
+
+    // Maximum score can be 5 * 9 = 45
+    CGFloat alpha = (self.score * 255.f) / 45.f;
+
+    NSLog(@"sun spot: %@, score: %d, alpha: %.1lf", NSStringFromCGPoint(self.coordinate), self.score, alpha);
+
+    return [UIColor colorWithRed: (((int)self) & 0xFF) / 255.0
+                           green: (((int)self >> 8) & 0xFF) / 255.0
+                            blue: (((int)self >> 16) & 0xFF) / 255.0
+                           alpha: alpha];
 }
 
 @end

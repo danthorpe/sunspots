@@ -8,12 +8,15 @@
 
 #import "DNTAppDelegate.h"
 
+#import "DNTSunSpotViewController.h"
+
 @implementation DNTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    DNTSunSpotViewController *controller = [[DNTSunSpotViewController alloc] init];
+    self.window.rootViewController = controller;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
